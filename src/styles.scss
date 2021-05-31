@@ -1,0 +1,259 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"),
+    url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+body {
+  background-color: #f0f0f0 !important;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.ver-tudo {
+  width: 16rem;
+  height: 1rem;
+  margin: 0 0.5rem 0 0.5px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0rem;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  display: inline-block;
+  background: rgb(169 169 169 / 21%);
+  padding: 1.5rem 0rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0rem rgb(169 169 169 / 53%);
+}
+.ver-tudo::after {
+  content: ">";
+  padding-left: 1rem;
+  font-weight: bolder;
+}
+.ver-tudo:hover {
+  background: rgb(169 169 169 / 35%);
+}
+
+button {
+  width: 24rem;
+  height: 51px;
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 16px 89px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
+  background-image: linear-gradient(to bottom, #6456ed, #483fb5);
+  border: unset;
+  z-index: 2;
+  position: relative;
+}
+
+button:hover {
+  width: 24rem;
+  height: 51px;
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 16px 89px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
+  background-image: linear-gradient(to bottom, #6456ed, #786fe8);
+  border: unset;
+}
+
+button:active {
+  width: 24rem;
+  height: 51px;
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 16px 89px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
+  background-image: linear-gradient(to bottom, #6456ed, #29209b);
+  border: unset;
+}
+
+button p {
+  width: 100%;
+  height: 3rem;
+  text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.16);
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+a.config {
+  background-color: #70707070;
+  color: #424242;
+  border-radius: 3rem;
+  padding: 1.3rem 1.5rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  font-size: 12pt;
+}
+
+.titulo-principal {
+  width: 24rem;
+  margin: 0rem 0.5rem 1rem 0.5rem;
+  font-family: Exo;
+  font-size: 40px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6065f1;
+}
+
+.texto {
+  width: 24rem;
+  height: 84px;
+  margin: 0 0.5rem 1.8rem 0.5rem;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #707070;
+}
+
+.titulo-secundario {
+  width: 100%;
+  height: 35px;
+  margin: 0 0 6px 16px;
+  font-family: Exo;
+  font-size: 23px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.texto-secundario {
+  width: 100%;
+  height: 41px;
+  margin: 6px 0 0 16px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  padding: 0.5rem 1.4rem 1.4rem 0.5em;
+  border: solid 6px #ffffff;
+  background-color: #3429a5;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3rem;
+  font-size: 22pt;
+  color: #ffffff;
+  box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (min-width: 426px) {
+  .titulo-principal {
+    width: 48rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+  }
+  .texto {
+    width: 48rem;
+    height: 84px;
+    margin: 0 0.5rem 1.8rem 0.5rem;
+    text-align: center;
+    text-align: justify;
+    padding: 0 6rem 0 6rem;
+  }
+  button {
+    width: 31rem;
+    height: 51px;
+    margin: 1rem 9rem 0 9rem;
+  }
+  button:active {
+    width: 31rem;
+    height: 51px;
+    margin: 1rem 9rem 0 9rem;
+    background-image: linear-gradient(to bottom, #6456ed, #29209b);
+    border: unset;
+  }
+  button:hover {
+    width: 31rem;
+    height: 51px;
+    margin: 1rem 9rem 0 9rem;
+    background-image: linear-gradient(to bottom, #6456ed, #786fe8);
+    border: unset;
+  }
+}
+
+@media screen and (min-width: 1451px) {
+  .web {
+    font-size: 2.7rem !important;
+  }
+  .texto.web-font {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (min-width: 1161px) {
+  .web {
+    font-size: 2.4rem;
+  }
+  .texto.web-font {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 824px) and (max-width: 1160px) {
+  .web {
+    font-size: 2rem;
+  }
+  .texto.web-font {
+    font-size: 1rem;
+  }
+}

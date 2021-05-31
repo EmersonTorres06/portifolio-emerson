@@ -1,0 +1,184 @@
+.header-skill {
+  width: 24.9rem;
+  height: 5rem;
+  border-radius: 10px;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
+  border: 0;
+  background-image: linear-gradient(to bottom, #5143dc, #29209b);
+}
+
+.header-skill::after {
+  width: 23.9rem;
+  height: 2rem;
+  opacity: 0.06;
+  font-family: Raleway;
+  padding: 1rem;
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #ffffff;
+  position: absolute;
+  top: -0.5rem;
+  left: 0.9rem;
+  content: "01001111 01101100 11100001 00100000 01100110 01101111 01110010 01100001 01110011 01110100 01100101 01101001 01110010 01101111 00100001 00100000 ";
+}
+
+.minhas-skills {
+  width: 88%;
+  height: 1rem;
+  margin: 0rem 1rem 0.5rem 2rem;
+  padding-top: 0.5rem;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-card {
+  width: 88%;
+  height: 2rem;
+  margin: 0.5rem 1rem 0.5rem 2rem;
+  font-family: Exo;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.corpo-skill {
+  width: 24.9rem;
+  height: 184px;
+  padding: 1rem 1rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
+  z-index: -1;
+  background-color: #ffffff;
+  position: sticky;
+}
+
+.corpo-titulo {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  margin: 0 0 16.6px 0;
+  font-family: Exo;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #6065f1;
+}
+
+li {
+  color: #6065f1;
+}
+
+.card-back {
+  display: none !important;
+}
+
+.div-ver-tudo {
+  margin: 2rem 0 2rem 0;
+}
+
+.card-center {
+  display: inline-grid;
+  margin: 0rem;
+}
+
+.skill-cards {
+  margin-top: -7rem;
+  z-index: 1;
+  position: relative;
+}
+
+// TABLET
+@media screen and (min-width: 426px) {
+  .header-skill,
+  .corpo-skill {
+    width: 31rem;
+  }
+  .header-skill::after {
+    width: 30.9rem;
+    top: 0.5rem;
+    left: 9.8rem;
+  }
+  .div-ver-tudo {
+    margin: 3rem 0rem;
+  }
+  .card-center {
+    margin: 1rem 9rem 0rem 9rem;
+  }
+  .skill-cards {
+    margin-top: -3rem;
+  }
+}
+
+// WEB
+@media screen and (min-width: 824px) {
+  .skill-sm {
+    height: 100px;
+  }
+  .card-back {
+    display: unset !important;
+  }
+  .nuvem {
+    background-image: url("../../assets/images/nuvem.png");
+    background-size: 69vh;
+    width: 32vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  .nuvem.direita {
+    background-position: 14rem;
+    top: 41rem;
+    right: 0;
+  }
+  .nuvem.esquerda {
+    background-position: -18rem;
+    top: 65rem;
+    background-size: 28rem;
+  }
+  .card-back,
+  .card-front {
+    max-width: 77vw;
+  }
+  .skill-cards {
+    margin-top: 0rem;
+    position: relative;
+  }
+  .div-ver-tudo {
+    margin: 2rem 0rem;
+  }
+  .modal {
+    margin: 0 !important;
+  }
+  .card-center {
+    margin: 0rem 18rem;
+  }
+  .header-skill::after {
+  }
+  .header-skill::after {
+    width: 31rem;
+    top: -0.5rem;
+    left: 32rem;
+    opacity: 0.04;
+    content: "01001111 01101100 11100001 00100000 01100110 01101111 01110010 01100001 01110011 01110100 01100101 01101001 01110010 01101111 00100001 00100000 ";
+  }
+}

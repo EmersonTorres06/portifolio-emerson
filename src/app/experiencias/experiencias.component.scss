@@ -1,0 +1,172 @@
+.titulo-principal {
+  font-size: 37px;
+  margin-top: 3rem;
+}
+
+#scroll-experiencias {
+  position: absolute;
+  top: 149.7rem;
+}
+
+.card-experiencia-ativa {
+  width: 24.5rem;
+  height: 30rem;
+  margin: 4rem 0.7rem 0 0.7rem;
+  padding: 5.2rem 4rem 5.2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #6456ed, #483fb5);
+  z-index: 100;
+}
+
+.card-experiencia-ativa i {
+  color: #e0cb6e;
+  font-size: 60pt;
+  margin: 5rem 0;
+}
+
+.header-spread {
+  background-image: url("../../assets/images/spread.svg");
+  background-size: 8rem;
+  width: 8rem;
+  height: 10rem;
+  position: inherit;
+  margin: -9rem 0 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.card-experiencia-inativa {
+  width: 24.4rem;
+  height: 25rem;
+  margin: -0.8rem 0 0 0.7rem;
+  padding: 2rem 4rem 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px 0 rgb(0 0 0 / 16%);
+  background-color: #ffffff;
+  position: relative;
+  z-index: -1;
+}
+
+.card-experiencia-inativa h2,
+.card-experiencia-inativa p {
+  color: #707070;
+}
+
+.card-experiencia-inativa i {
+  color: #616161;
+  opacity: 0.1;
+  font-size: 60pt;
+  margin: 5rem 0;
+}
+
+.indra {
+  z-index: -2;
+}
+
+@media screen and (min-width: 426px) {
+  .titulo-principal {
+    margin-top: 20rem;
+  }
+  .texto {
+    text-align: center;
+    padding: 0 0rem 0 0rem;
+  }
+  .card-experiencia-ativa {
+    margin: 7rem 12rem 0 12rem;
+  }
+  .card-experiencia-inativa {
+    margin: -1rem 12rem 0 12rem;
+  }
+  .nuvem-1,
+  .nuvem-2,
+  .nuvem-3,
+  .nuvem-4,
+  .nuvem-5 {
+    background-image: url("../../assets/images/nuvem.svg");
+    background-size: 25rem;
+    width: 25rem;
+    height: 12.8rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+  }
+  .nuvem-1 {
+    margin: 0rem 0rem 0rem -14rem;
+  }
+  .nuvem-2 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 48rem 0rem 0rem -15rem;
+    background-size: 13rem;
+  }
+  .nuvem-3 {
+    margin: 25rem 0rem 0rem 40rem;
+    position: fixed;
+    width: 10.4rem;
+    position: absolute;
+  }
+  .nuvem-4 {
+    margin: 0rem 0rem 0rem 40rem;
+    position: fixed;
+    width: 25rem;
+    transform: rotate(180deg);
+    position: absolute;
+  }
+  .indra {
+    margin-top: -0.4rem !important;
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .titulo-principal,
+  .texto {
+    width: auto;
+    height: auto;
+  }
+  .card-experiencia-ativa {
+    margin: 7rem 12rem 0 30vw;
+  }
+  .card-experiencia-inativa {
+    margin: -25rem 12rem 0 32vw;
+  }
+  .cap {
+    left: -22rem;
+  }
+  .indra {
+    left: 22rem !important;
+    margin-top: -25rem !important;
+  }
+  .nuvem-3 {
+    position: absolute;
+    margin: 22rem 0rem 0rem 84.5rem;
+  }
+  .nuvem-2 {
+    margin: 2rem 0rem 0rem 61rem;
+    background-size: 10vw;
+  }
+  .titulo-principal {
+    margin-top: 14rem;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .card-experiencia-ativa {
+    margin: 7rem 12rem 0 35vw;
+  }
+  .card-experiencia-inativa {
+    margin: -25rem 12rem 0 35vw;
+  }
+  .titulo-principal {
+    margin-top: 14rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card-experiencia-ativa {
+    margin: 7rem 12rem 0 36vw;
+  }
+  .card-experiencia-inativa {
+    margin: -25rem 12rem 0 36vw;
+  }
+}

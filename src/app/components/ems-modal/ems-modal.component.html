@@ -1,0 +1,20 @@
+
+<ng-container *ngIf="aberto; else fechado">
+    <div id="ems-background" class="background"></div>
+    <div class="modal-web">
+        <a id="modal-body" class="modal-body text-center">
+            <div class="fechar-modal" (click)="toggleModal()">x</div>
+            <div class="ems-modal-content">
+                <ng-content select="[web]"></ng-content>
+            </div>
+        </a>
+    </div>
+    <div id="modal-mobile" class="modal-mobile">
+        <button id="fechar-modal" (click)="toggleModal()"></button>
+        <div class="ems-modal-content">
+            <ng-content select="[mobile]"></ng-content>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #fechado></ng-template>
