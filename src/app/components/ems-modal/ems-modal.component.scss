@@ -1,0 +1,152 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.548);
+  z-index: 101;
+}
+
+.modal-body {
+  background: transparent url("../../../assets/images/Ems-modal.png") no-repeat;
+  background-size: 87.7vw 101vh;
+  background-position: -2.8rem;
+  width: 74%;
+  height: 108%;
+  position: fixed;
+  left: 7vw;
+  top: -2%;
+  z-index: 101;
+  padding-top: 4vw;
+}
+
+.ems-modal-content {
+  max-height: 100%;
+  max-width: 100%;
+  height: 77vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  left: 0.5rem;
+  top: 20rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  margin-top: 5rem;
+}
+
+.fechar-modal {
+  position: fixed;
+  right: 8vw;
+  top: 3vw;
+  font-weight: bolder;
+  font-size: xxx-large;
+  color: snow;
+  cursor: pointer;
+}
+
+.fechar-modal:hover {
+  color: #6456ed;
+}
+
+.modal-mobile {
+  display: unset;
+  height: 0%;
+  background: #f0f0f0;
+  z-index: 101;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: 0.2s;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.fechar-modal-mobile {
+  background: rgb(216 214 214 / 45%);
+  text-align: center;
+  font-weight: 400;
+  height: 1.5rem;
+  margin: 1.5rem 0.9rem;
+  border-radius: 0.5rem;
+}
+.modal-web {
+  display: none;
+}
+#fechar-modal::after {
+  content: "x";
+  color: gray;
+  font-weight: bolder;
+}
+#fechar-modal {
+  background: rgb(248 249 250);
+  width: 3rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: 2rem;
+  margin: 0 !important;
+  float: right;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+// TABLET
+@media screen and (min-width: 426px) {
+  .ems-modal-content {
+    padding: 1rem 3.2rem;
+  }
+  .modal-mobile {
+    width: 77.5%;
+    margin: 0rem 5.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-web {
+    display: unset;
+  }
+  .modal-mobile {
+    display: none;
+    width: 75%;
+    left: 6rem;
+  }
+  .modal-body {
+    background-size: 98.7vw 101vh;
+    background-position: -10.8rem;
+    left: 15vw;
+    width: 69.7%;
+  }
+  .ems-modal-content {
+    left: 12vw;
+    top: 16vh;
+    max-height: 77vh;
+    max-width: 60vw;
+    height: 77vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    padding: 0rem;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .modal-web {
+    display: unset;
+  }
+  .modal-body {
+    left: 25vw;
+    width: 52%;
+    background-size: 71vw 101vh;
+    background-position: -9.8rem;
+  }
+  .ems-modal-content {
+    max-width: 38vw;
+    left: 7.3vw;
+    top: 6vh;
+    max-height: 77vh;
+    height: 77vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+  }
+  .modal-mobile {
+    display: none;
+  }
+}

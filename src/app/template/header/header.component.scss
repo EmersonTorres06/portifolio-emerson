@@ -1,0 +1,122 @@
+header {
+  width: 25.9rem;
+  height: 54rem;
+  padding: 16px 0 37px;
+  background-image: url("../../../assets/images/header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 49rem 97rem;
+  background-position: -10rem 0rem;
+}
+
+#scroll-skills {
+  position: absolute;
+  top: 47rem;
+}
+
+nav {
+  display: none;
+}
+
+.mobile {
+  display: inherit;
+}
+
+.web {
+  display: none;
+}
+
+.nuvem-base {
+  width: 37.9rem;
+  height: 35rem;
+  margin: 14rem 0 0 -12rem;
+  background-image: url("../../../assets/images/nuvem_base.png");
+  background-repeat: no-repeat;
+  top: 5rem;
+  left: 0;
+  position: absolute;
+  background-size: 80rem 70rem;
+  z-index: 1 !important;
+}
+
+.foto-cabecalho {
+  background-image: url("../../../assets/images/Eu_Header.png");
+  width: 23.8rem;
+  height: 30rem;
+  margin: 3rem 0 0 14.1rem;
+  z-index: 2 !important;
+  position: absolute;
+  background-size: 22rem;
+  background-repeat: no-repeat;
+}
+
+// TABLET
+@media screen and (min-width: 426px) {
+  header {
+    width: 50.5rem;
+    height: 56rem;
+    padding: 16px 0 37px;
+    background-size: 70rem;
+    background-position: -10rem -1rem;
+  }
+  .nuvem-base {
+    width: 62rem;
+    height: 36rem;
+    margin: 15rem 0 0 -12rem;
+  }
+  .foto-cabecalho {
+    width: 40rem;
+    height: 31rem;
+    margin: 1rem 0 0 20.8rem;
+    background-size: 33rem;
+  }
+  #scroll-skills {
+    top: 52rem;
+  }
+}
+
+// WEB
+@media screen and (min-width: 824px) {
+  header {
+    background-image: url("../../../assets/images/header.png");
+    width: 100%;
+    height: 45rem;
+    padding: 16px 0 37px;
+    background-repeat: no-repeat;
+    background-size: 100% 47rem;
+    background-position: initial;
+  }
+  .nuvem-base {
+    background: none;
+  }
+  .texto {
+    margin: 0 0.5rem 1.8rem 14.4vw !important;
+    padding: 0 26vw 0 0;
+    width: 65vw;
+    height: auto;
+  }
+  .foto-cabecalho {
+    width: 52%;
+    max-width: 45%;
+    height: 29rem;
+    margin: -13rem 0 0 73vw;
+    background-size: 33rem;
+  }
+  .web {
+    display: inherit;
+    text-align: left;
+    width: 43vw;
+    margin: 9rem 2rem 1rem 14.4vw;
+  }
+  button {
+    margin: 0rem 9rem 0 14.4vw;
+    width: 15rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mobile {
+    display: none;
+  }
+  #scroll-skills {
+    top: 40rem;
+  }
+}

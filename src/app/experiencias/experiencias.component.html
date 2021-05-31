@@ -1,0 +1,64 @@
+<div id="scroll-experiencias"></div>
+
+<h1 class="titulo-principal">{{ dadosCompartilhados?.tra?.HeaderTituloExp }}</h1>
+<p class="texto">{{ dadosCompartilhados?.tra?.HeaderTextoExp }}</p>
+
+<div class="nuvem-1"></div>
+<!-- <div class="nuvem-3"></div> -->
+<!-- <div class="nuvem-2"></div> -->
+
+<div class="experiencias">
+    <div class="card-experiencia-ativa text-center">
+        <div class="header-spread text-center"></div>
+        <h2 class="titulo-secundario m-0 text-center mt-2">SPREAD TECNOLOGIA</h2>
+        <p class="texto-secundario m-0 text-center">{{ dadosCompartilhados?.tra?.cardSpreadDuracao }}</p>
+        <p class="texto-secundario m-0 text-center">{{ dadosCompartilhados?.tra?.cardSpreadPeriodo }}</p>
+        <p class="texto-secundario m-0 text-center">
+            {{ dadosCompartilhados?.tra?.cardSpreadTec }}
+        </p>
+        <i class="fas fa-code"></i>
+    </div>
+    <div class="card-experiencia-inativa cap text-center">
+        <h2 class="titulo-secundario mt-3 m-0 text-center">CAPGEMINI</h2>
+        <p class="texto-secundario m-0 text-center">{{ dadosCompartilhados?.tra?.cardCapgeminiDuracao }}</p>
+        <p class="texto-secundario m-0 text-center"></p>
+        <p class="texto-secundario m-0 text-center">
+            {{ dadosCompartilhados?.tra?.cardCapgeminiTec }}
+        </p>
+        <i class="fas fa-code"></i>
+    </div>
+    <div class="card-experiencia-inativa indra text-center">
+        <h2 class="titulo-secundario mt-3 m-0 text-center">INDRA COMPANY</h2>
+        <p class="texto-secundario m-0 text-center">{{ dadosCompartilhados?.tra?.cardIndraDuracao }}</p>
+        <p class="texto-secundario m-0 text-center"></p>
+        <p class="texto-secundario m-0 text-center">
+            {{ dadosCompartilhados?.tra?.cardIndraTec }}
+        </p>
+        <i class="fas fa-code"></i>
+    </div>
+</div>
+
+<div class="w-100 text-center my-5">
+    <p class="ver-tudo" (click)="emsModal.toggleModal()">{{ dadosCompartilhados?.tra?.verTudoExp }}</p>
+</div>
+
+<ems-modal #emsModal>
+    <ng-container web>
+        <ng-container *ngTemplateOutlet="estagio"></ng-container>
+    </ng-container>
+    <ng-container mobile>
+        <ng-container *ngTemplateOutlet="estagio"></ng-container>
+    </ng-container>
+</ems-modal>
+
+<ng-template #estagio>
+    <div class="card-experiencia-inativa text-center display-grid m-0 w-100">
+        <h2 class="titulo-secundario mt-3 m-0 text-center text-nowrap">{{ dadosCompartilhados?.tra.cardMinPlaTitulo }}</h2>
+        <p class="texto-secundario m-0 text-center">{{ dadosCompartilhados?.tra?.cardMinPlaDuracao }}</p>
+        <p class="texto-secundario m-0 text-center"></p>
+        <p class="texto-secundario m-0 text-center">
+            {{ dadosCompartilhados?.tra?.cardMinPlaTec }}
+        </p>
+        <i class="fas fa-code"></i>
+    </div>
+</ng-template>

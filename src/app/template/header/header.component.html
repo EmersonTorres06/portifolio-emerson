@@ -1,0 +1,18 @@
+<header>
+
+    <ems-nav></ems-nav>
+    
+    <h1 class="titulo-principal mobile">{{ dadosCompartilhados?.tra?.headerTituloSkillsMob }}</h1>
+    <h1 class="titulo-principal web">{{ dadosCompartilhados?.tra?.headerTituloSkillsWeb }}</h1>
+
+    <p class="texto web-font">{{ dadosCompartilhados?.tra?.headerTextoSkills }}</p>
+
+    <button [ngxScrollTo]="'#scroll-skills'" [ngxScrollToDuration]="300"><p>{{ dadosCompartilhados?.tra?.headerButtonSkills }}</p></button>
+    
+    <div class="nuvem-base no-select">
+        <div class="foto-cabecalho no-select"></div>
+    </div>
+
+</header>
+
+<div id="scroll-skills"></div>
