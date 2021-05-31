@@ -1,0 +1,28 @@
+
+<div class="arte-ilustracao">
+    <h1 class="titulo-principal web">{{ dadosCompartilhados?.tra?.headerTituloIlustracao }}</h1>
+    <p class="texto web-font">{{ dadosCompartilhados?.tra?.headerTextoIlistracao }}</p>
+    <button [ngxScrollTo]="'#tecnologia-sessao'"><p>{{ dadosCompartilhados?.tra?.headerButtonIlustracao }}</p></button>
+</div>
+
+<div class="nuvem-clara">
+    <div class="aviao"></div>
+    <div class="nuvem-escura">
+        <div id="tecnologia-sessao"></div>
+        <div class="tecnologias">
+            <div class="icones">
+                <div class="mb-4">
+                    <i class="icon"><i class="fas fa-pen"></i></i>
+                    <h2 class="titulo-secundario">{{ dadosCompartilhados?.tra?.iconLapisTitulo }}</h2>
+                    <p class="texto-secundario">{{ dadosCompartilhados?.tra?.iconLapisTexto }}</p>
+                </div>
+                <div class="mb-4">
+                    <i class="icon"><i class="fas fa-border-style"></i></i>
+                    <h2 class="titulo-secundario">{{ dadosCompartilhados?.tra?.iconEdicaoTitulo }}</h2>
+                    <p class="texto-secundario">{{ dadosCompartilhados?.tra?.iconEdicaoTexto }}</p>
+                </div>
+            </div>
+            <div class="ems-paraquedas"></div>
+        </div>
+    </div>
+</div>

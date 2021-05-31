@@ -1,0 +1,102 @@
+<div class="nuvem esquerda"></div>
+<div class="nuvem direita"></div>
+
+<div class="text-center skill-cards">
+    <div class="card-center">
+        <div class="card-front mb-3"><ng-container *ngTemplateOutlet="frontEnd"></ng-container></div>
+        <div class="card-back"><ng-container *ngTemplateOutlet="backEnd"></ng-container></div>
+    </div>
+</div>
+
+<div class="w-100 text-center div-ver-tudo">
+    <p class="ver-tudo" (click)="emsModal.toggleModal()">{{ dadosCompartilhados?.tra?.verTudoSkills }}</p>
+</div>
+
+<ems-modal #emsModal>
+    <ng-container web>
+        <ng-container *ngTemplateOutlet="intContinua"></ng-container>
+    </ng-container>
+    <ng-container mobile>
+        <div class="mb-3"><ng-container *ngTemplateOutlet="intContinua"></ng-container></div>
+        <ng-container *ngTemplateOutlet="backEnd"></ng-container>
+    </ng-container>
+</ems-modal>
+
+<ng-template #frontEnd>
+    <div id="front-card" class="d-inline-block">
+        <div class="header-skill">
+            <div class="minhas-skills">{{ dadosCompartilhados?.tra?.menuSkills }}</div>
+            <div class="header-card">Front-end</div>
+        </div>
+        <div class="corpo-skill">
+            <p class="corpo-titulo">{{ dadosCompartilhados?.tra?.cardBodyTitulo }}</p>
+            <ul class="d-inline-block">
+                <li>{{ dadosCompartilhados?.tra?.htmlECss }}</li>
+                <li>Angular 2/11 +</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>{{ dadosCompartilhados?.tra?.layoutResponsivo }}</li>
+            </ul>
+            <ul class="d-inline-block">
+                <li>React JS</li>
+                <li>Angular JS</li>
+                <li>Jquery</li>
+                <li>AJAX</li>
+                <li>{{ dadosCompartilhados?.tra?.formReativos }}</li>
+            </ul>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #backEnd>
+    <div id="backend" class="d-inline-block">
+        <div class="header-skill">
+            <div class="minhas-skills">{{ dadosCompartilhados?.tra?.menuSkills }}</div>
+            <div class="header-card">Backend</div>
+        </div>
+        <div class="corpo-skill">
+            <p class="corpo-titulo">{{ dadosCompartilhados?.tra?.cardBodyTitulo }}</p>
+            <ul class="d-inline-block">
+                <li>JAVA</li>
+                <li>Node JS</li>
+                <li>Spring</li>
+                <li>Jasper Reports</li>
+                <li>JUnit</li>
+            </ul>
+            <ul class="d-inline-block">
+                <li>Hibernate</li>
+                <li>REST</li>
+                <li>MVC</li>
+                <li>EJB</li>
+                <li>Struts</li>
+            </ul>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #intContinua>
+    <div id="front-card" class="card-front d-inline-block">
+        <div class="header-skill">
+            <div class="minhas-skills">{{ dadosCompartilhados?.tra?.menuSkills }}</div>
+            <div class="header-card text-nowrap">{{ dadosCompartilhados?.tra?.integracaoContinua }}</div>
+        </div>
+        <div class="corpo-skill skill-sm text-left">
+            <ul class="d-inline-block">
+                <li>Jenkins</li>
+                <li>Devops</li>
+            </ul>
+            <ul class="d-inline-block">
+                <li>Nexus</li>
+                <li>Maven</li>
+            </ul>
+            <ul class="d-inline-block">
+                <li>Jira</li>
+                <li>SonarQube</li>
+            </ul>
+            <ul class="d-inline-block">
+                <li>Gulp</li>
+                <li>NPM</li>
+            </ul>
+        </div>
+    </div>
+</ng-template>

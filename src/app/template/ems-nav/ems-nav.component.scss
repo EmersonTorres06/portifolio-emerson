@@ -1,0 +1,283 @@
+.emerson-torres {
+  font-family: Exo;
+  font-size: 16pt;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6065f1;
+  cursor: pointer;
+  display: none !important;
+}
+
+.emerson-torres::before {
+  content: "Emerson";
+}
+
+.emerson-torres:hover {
+  color: #575cdd;
+}
+
+.custom-nav-color {
+  background-color: rgb(249 250 251 / 96%) !important;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transform: none !important;
+  padding: 0.5rem 0rem;
+  background: #f8f9fa;
+  z-index: 100;
+  box-shadow: 0px 0px 11px 4px rgb(152 148 148 / 51%);
+  height: 4rem;
+  display: unset;
+}
+
+nav.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transform: none !important;
+  padding: 0.5rem 0rem;
+  background: #f8f9fa;
+  z-index: 100;
+  box-shadow: 0px 0px 11px 4px rgb(152 148 148 / 51%);
+  height: 4rem;
+  display: unset;
+}
+nav li.item-nav div {
+  height: 3rem;
+}
+nav li.item-nav {
+  display: inline-block;
+  margin: 0 1vw;
+  width: 22%;
+  height: 3rem;
+}
+nav li.item-nav button {
+  width: 8rem;
+  padding: 0.8rem 0;
+  display: inline-block;
+  height: 2.7rem;
+  margin: 0;
+  right: 0;
+}
+p.sm {
+  display: unset !important;
+}
+p.lg {
+  display: none !important;
+}
+nav li.item-nav div.texto p {
+  padding: 0.5rem 0.5vw;
+  margin: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+nav li.item-nav div.texto p.active {
+  background: #eaeaea;
+}
+nav li.item-nav div.texto {
+  margin: 0 !important;
+  width: auto;
+  padding: 0;
+  font-size: 11pt;
+}
+nav ul {
+  text-align: center;
+  padding: 0;
+  height: 3rem;
+}
+#contatos {
+  display: none;
+}
+.divisor {
+  position: absolute;
+}
+
+#menu-mobile {
+  background: #f0f0f0;
+  width: 5rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin: 0 !important;
+}
+#menu-mobile i {
+  font-size: 20pt;
+}
+#menu-mobile div div::after {
+  content: "▲";
+  margin-left: 0.3rem;
+}
+.accordion {
+  z-index: 99;
+}
+.mobile-menu-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.562);
+  z-index: -1;
+}
+#ems-accordion {
+  display: unset;
+  bottom: 4rem;
+  top: unset;
+}
+.accordion-item {
+  border: none;
+}
+.translate {
+  width: 50%;
+}
+.translate.active {
+  background: rgb(0 0 0 / 5%);
+  border-radius: 0.6rem;
+}
+
+// TABLET
+@media screen and (min-width: 426px) {
+  .emerson-torres {
+    display: none !important;
+  }
+  .emerson-torres::before {
+    content: "Emerson";
+  }
+  .divisor {
+    position: unset;
+  }
+  nav {
+    height: 4rem !important;
+  }
+}
+
+// WEB
+@media screen and (min-width: 824px) {
+  #menu-mobile {
+    display: unset;
+  }
+  #menu-mobile div div::after {
+    content: "▼";
+    margin-right: 0.3rem;
+  }
+  #ems-accordion {
+    display: unset;
+    bottom: unset;
+    top: 4rem;
+  }
+  nav {
+    bottom: unset;
+    top: 0;
+    display: unset;
+    position: absolute;
+    width: 100%;
+    background: unset;
+    box-shadow: unset;
+  }
+  nav.active {
+    bottom: unset;
+    top: 0;
+  }
+  nav li.item-nav {
+    display: inline-block;
+    margin: 0 1vw;
+    width: 17%;
+  }
+  nav li.item-nav button {
+    width: 8rem;
+    padding: 0.8rem 0;
+    display: inline-block;
+    height: 2.7rem;
+    margin: 0;
+    right: 0;
+  }
+  nav li.item-nav div.texto p {
+    padding: 0.5rem 0.5vw;
+    margin: 0;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  nav li.item-nav div.texto p.active {
+    background: #eaeaea;
+  }
+  nav li.item-nav div.texto p:hover {
+    background: #f1f1f1;
+  }
+  nav li.item-nav div.texto {
+    margin: 0 !important;
+    width: auto;
+    padding: 0;
+    font-size: 11pt;
+  }
+  nav ul {
+    text-align: center;
+    margin: 0 10vw;
+  }
+  nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: none !important;
+    padding: 0.5rem 0rem;
+    background: #f8f9fa;
+    z-index: 100;
+    box-shadow: 0px 0px 11px 4px rgb(152 148 148 / 51%);
+  }
+  .emerson-torres {
+    display: unset !important;
+    display: inline-block !important;
+    white-space: nowrap;
+  }
+  .emerson-torres::before {
+    content: "Emerson Torres";
+  }
+  #contatos {
+    display: unset;
+    width: 3rem;
+  }
+  .divisor {
+    position: unset;
+  }
+  .accordion-item {
+    width: 41%;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+  .accordion-body::after {
+    content: "▲";
+    color: white;
+    position: fixed;
+    right: 22vw;
+    top: 4.9rem;
+  }
+  .accordion-body {
+    display: grid;
+  }
+  .translate:hover {
+    background: rgb(0 0 0 / 2%);
+    border-radius: 0.6rem;
+  }
+  .translate {
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and(min-width: 1360px) {
+  nav ul {
+    margin: 0 11rem;
+  }
+  .emerson-torres::before {
+    content: "Emerson Torres";
+  }
+}

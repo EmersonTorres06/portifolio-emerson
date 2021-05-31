@@ -1,0 +1,152 @@
+.titulo-secundario,
+.texto {
+  color: #6065f1;
+  width: 23rem;
+  margin: 1.5rem 1rem !important;
+  text-align: justify;
+}
+
+.titulo-secundario {
+  font-size: 22px;
+}
+
+.nuvem_footer {
+  background-image: url("../../../assets/images/nuvem_footer.svg");
+  background-size: 71rem;
+  background-position: -8rem -4rem;
+  width: 34.9rem;
+  height: 37rem;
+  background-repeat: no-repeat;
+  margin: -10rem 0rem 0 -9rem;
+}
+
+.eu_footer {
+  background-image: url("../../../assets/images/Eu_Footer_.png");
+  background-size: 21rem 15rem;
+  width: 21rem;
+  height: 15rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  margin: 6rem 0rem 0 -2.5rem;
+  -webkit-transform: rotate(47deg);
+  -moz-transform: rotate(47deg);
+  -ms-transform: rotate(47deg);
+  -o-transform: rotate(47deg);
+  transform: rotate(47deg);
+}
+
+i.icon,
+p.texto-contato {
+  left: 0;
+}
+p.texto-contato {
+  font-family: Raleway;
+  color: #ffffff;
+  margin: 1.4rem 6rem;
+  text-align: left;
+}
+div.contatos-web-tablet {
+  width: 27rem;
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+p.texto-contato-mobile {
+  font-family: Raleway;
+  color: #ffffff;
+  margin: 0.2rem 0.7rem;
+  text-align: left;
+  display: inline-block;
+}
+div.contatos-mobile {
+  width: 16.1rem;
+  position: absolute;
+  right: 0;
+  display: unset;
+  top: 266rem;
+  color: white;
+}
+.icon-contatos-mobile {
+  text-align: right;
+  width: 62%;
+}
+
+@media screen and (min-width: 426px) {
+  .nuvem_footer {
+    background-size: 138rem 102rem;
+    background-position: 2rem -2rem;
+    width: 91.6rem;
+    height: 49rem;
+    margin: -16rem 0rem 0 -41rem;
+  }
+  .eu_footer {
+    background-size: 26rem 20rem;
+    width: 26rem;
+    height: 15rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin: 10rem 0rem 0 1rem;
+    transform: rotate(47deg);
+  }
+  .titulo-secundario {
+    color: #ffffff;
+    margin: 1rem 20rem !important;
+    text-align: justify;
+    width: 27rem;
+  }
+  .texto {
+    margin: 0rem 14rem !important;
+    width: 26.5em;
+    color: #ffffff;
+  }
+  .footer-text {
+    margin: 8rem 0rem 0rem 3rem;
+    position: absolute;
+    width: 47rem;
+    text-align: right !important;
+  }
+  div.contatos-web-tablet {
+    width: 27rem;
+    position: absolute;
+    right: 0;
+    display: unset;
+  }
+  div.contatos-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .nuvem_footer {
+    margin: 0;
+    background-size: 336rem;
+    width: 98.7vw;
+    height: 42rem;
+    background-position: -144rem -36rem;
+  }
+  .footer-text {
+    margin: 16rem 0rem 0rem 31vw;
+    position: absolute;
+    width: 47rem;
+    text-align: right !important;
+  }
+  .eu_footer {
+    background-size: 32rem;
+    width: 33rem;
+    height: 20rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin: 15rem 0rem 0 6rem;
+    transform: rotate(29deg);
+  }
+  div.contatos-web-tablet {
+    width: 27rem;
+    position: absolute;
+    right: 0;
+    display: unset;
+  }
+  div.contatos-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+<nav id="nav-ems">
+    <ul>
+        <li class="item-nav emerson-torres" [ngxScrollTo]="'#topo'" [ngxScrollToDuration]="300">
+            <a class="navbar-brand"></a>
+        </li>
+        <li class="item-nav mt-1" [ngxScrollTo]="'#scroll-skills'" [ngxScrollToDuration]="300">
+            <div class="texto text-center">
+                <p id="nav-skills" class="s, d-inline-block no-select">{{ dadosCompartilhados?.tra?.menuSkills }}</p>
+                <a class="divisor text-right float-right pl-2 mt-2 text-muted d-inline-block">/</a>
+            </div>
+        </li>
+        <li class="item-nav mt-1" [ngxScrollTo]="'#scroll-experiencias'" [ngxScrollToDuration]="300">
+            <div class="texto text-center">
+                <p id="nav-experiencias" class="sm no-select">{{ dadosCompartilhados?.tra?.menuExperiencias }}</p>
+            </div>
+        </li>
+        <li class="item-nav mt-1">
+            <div class="texto text-center">
+                <a class="float-left text-muted">/</a>
+                <p id="nav-hobbies" class="sm d-inline-block no-select">{{ dadosCompartilhados?.tra?.menuHobbies }}</p>
+            </div>
+        </li>
+        <li class="item-nav text-nowrap">
+            <button id="menu-mobile" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#emsCollapse" aria-expanded="false" aria-controls="emsCollapse">
+                <div *ngIf="dadosCompartilhados?.leng == 'en'" class="text-nowrap">
+                    <i class="us flag d-inline-block mr-1"></i><div class="d-inline-block">EN</div>
+                </div>
+                <div *ngIf="dadosCompartilhados?.leng == 'pt'" class="text-nowrap">
+                    <i class="br flag d-inline-block mr-1"></i><div class="d-inline-block">PT</div>
+                </div>
+            </button>
+            <button id="contatos" class="ml-3" [ngxScrollTo]="'#footer'" [ngxScrollToDuration]="300">
+                <p><i class="fas fa-mail-bulk"></i></p>
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<div class="accordion position-fixed w-100" id="ems-accordion">
+    <div class="accordion-item">
+    <div id="emsCollapse" class="accordion-collapse collapse" aria-labelledby="emsHanding" data-bs-parent="#ems-accordion">
+      <div class="mobile-menu-background" data-bs-toggle="collapse" 
+      data-bs-target="#emsCollapse" aria-expanded="false" aria-controls="emsCollapse"></div>
+      <div class="accordion-body">
+        <div class="d-inline-block px-2 text-center translate" (click)="dadosCompartilhados.setTraducaoEnUS()"
+            [ngClass]="[dadosCompartilhados?.leng == 'en' ? 'active' : '']"
+            data-bs-toggle="collapse" data-bs-target="#emsCollapse" aria-expanded="false" aria-controls="emsCollapse"> 
+            <i class="us flag"></i> {{ dadosCompartilhados?.tra?.traIngUs }}
+        </div>
+        <div class="d-inline-block px-2 text-center translate" (click)="dadosCompartilhados.setTraducaoPtBR()"
+            [ngClass]="[dadosCompartilhados?.leng == 'pt' ? 'active' : '']"
+            data-bs-toggle="collapse" data-bs-target="#emsCollapse" aria-expanded="false" aria-controls="emsCollapse">
+            <i class="br flag"></i> {{ dadosCompartilhados?.tra?.traPtBr }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
