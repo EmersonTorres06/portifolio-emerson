@@ -24,6 +24,7 @@ export const ptBr = {
     headerTextoSkills: 'Me chamo Emerson Torres Feitosa, tenho 25 anos e gostaria de te receber nesse novo projeto para te mostrar um pouco dos meus conhecimentos e minhas habilidades, vamos lá?',
     headerButtonSkills: 'Começar a Jornada!',
     cardBodyTitulo: 'São tantas coisas!',
+    cardBodyTituloBack: 'Eu AMO Backend também! 💙',
     htmlECss: 'HTML 5 e CSS 3',
     layoutResponsivo: 'Layout Responsivo',
     formReativos: 'Formulários Reativos',

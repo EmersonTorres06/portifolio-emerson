@@ -25,6 +25,7 @@
     + "you to this new project to show some of my knowledge and my skills, Let's do it?",
     headerButtonSkills: 'Start the journey!',
     cardBodyTitulo: 'There are so many things!',
+    cardBodyTituloBack: 'I LOVE Backend too! 💙',
     htmlECss: 'HTML 5 and CSS 3',
     layoutResponsivo: 'Responsive Layout',
     formReativos: 'Reactive forms',
