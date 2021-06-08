@@ -64,12 +64,13 @@ div.contatos-mobile {
   position: absolute;
   right: 0;
   display: unset;
-  top: 266rem;
+  top: 258rem;
   color: white;
 }
 .icon-contatos-mobile {
   text-align: right;
   width: 62%;
+  height: 5rem;
 }
 
 @media screen and (min-width: 426px) {
@@ -77,7 +78,7 @@ div.contatos-mobile {
     background-size: 138rem 102rem;
     background-position: 2rem -2rem;
     width: 91.6rem;
-    height: 49rem;
+    height: 53rem;
     margin: -16rem 0rem 0 -41rem;
   }
   .eu_footer {

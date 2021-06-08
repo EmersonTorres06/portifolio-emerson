@@ -8,10 +8,13 @@
     /** 
      * NAV MENU
      */
+    inicio: 'Home',
     menuSkills: 'Skills',
-    menuExperiencias: 'Experiences',
+    menuExperiencias: 'Exp.',
     menuHobbies: 'Hobbies',
     menuContatos: 'Contacts',
+    emBreve: 'Comming Soon :D',
+    linguagem: 'Lenguage',
     traIngUs: 'English-US',
     traPtBr: 'Portuguese-BR',
     /** */
