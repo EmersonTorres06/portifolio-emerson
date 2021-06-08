@@ -3,24 +3,42 @@
         <li class="item-nav emerson-torres" [ngxScrollTo]="'#topo'" [ngxScrollToDuration]="300">
             <a class="navbar-brand"></a>
         </li>
+        <li class="item-nav mt-1 mobile" [ngxScrollTo]="'#topo'" [ngxScrollToDuration]="300">
+            <div class="texto text-center">
+                <p id="nav-home" class="s, d-inline-block no-select active">
+                    <i class="et"><br></i> 
+                    {{ dadosCompartilhados?.tra?.inicio }}
+                </p>
+            </div>
+        </li>
         <li class="item-nav mt-1" [ngxScrollTo]="'#scroll-skills'" [ngxScrollToDuration]="300">
             <div class="texto text-center">
-                <p id="nav-skills" class="s, d-inline-block no-select">{{ dadosCompartilhados?.tra?.menuSkills }}</p>
-                <a class="divisor text-right float-right pl-2 mt-2 text-muted d-inline-block">/</a>
+                <p id="nav-skills" class="s, d-inline-block no-select">
+                    <i class="fas fa-code icon-nav-mobile"><br></i> 
+                    {{ dadosCompartilhados?.tra?.menuSkills }}
+                </p>
+                <a class="divisor text-right float-right pl-2 mt-2 text-muted d-inline-block web">/</a>
             </div>
         </li>
         <li class="item-nav mt-1" [ngxScrollTo]="'#scroll-experiencias'" [ngxScrollToDuration]="300">
             <div class="texto text-center">
-                <p id="nav-experiencias" class="sm no-select">{{ dadosCompartilhados?.tra?.menuExperiencias }}</p>
+                <p id="nav-experiencias" class="sm no-select">
+                    <i class="fas fa-briefcase icon-nav-mobile"><br></i> 
+                    {{ dadosCompartilhados?.tra?.menuExperiencias }}
+                </p>
             </div>
         </li>
         <li class="item-nav mt-1">
             <div class="texto text-center">
-                <a class="float-left text-muted">/</a>
-                <p id="nav-hobbies" class="sm d-inline-block no-select">{{ dadosCompartilhados?.tra?.menuHobbies }}</p>
+                <a class="float-left text-muted web">/</a>
+                <p [mdbTooltip]="dadosCompartilhados?.tra?.emBreve" placement="bottom" id="nav-hobbies"
+                    class="sm d-inline-block no-select">
+                    <i class="fas fa-gamepad icon-nav-mobile"><br></i> 
+                    {{ dadosCompartilhados?.tra?.menuHobbies }}
+                </p>
             </div>
         </li>
-        <li class="item-nav text-nowrap">
+        <li class="item-nav text-nowrap web">
             <button id="menu-mobile" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#emsCollapse" aria-expanded="false" aria-controls="emsCollapse">
                 <div *ngIf="dadosCompartilhados?.leng == 'en'" class="text-nowrap">

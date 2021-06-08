@@ -46,7 +46,7 @@ nav.fixed {
   background: #f8f9fa;
   z-index: 100;
   box-shadow: 0px 0px 11px 4px rgb(152 148 148 / 51%);
-  height: 4rem;
+  height: 5rem;
   display: unset;
 }
 nav li.item-nav div {
@@ -73,13 +73,13 @@ p.lg {
   display: none !important;
 }
 nav li.item-nav div.texto p {
-  padding: 0.5rem 0.5vw;
+  padding: 0.3rem 0vw;
   margin: 0;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 nav li.item-nav div.texto p.active {
-  background: #eaeaea;
+  color: #6355ea;
 }
 nav li.item-nav div.texto {
   margin: 0 !important;
@@ -142,6 +142,38 @@ nav ul {
   border-radius: 0.6rem;
 }
 
+.icon-nav-mobile {
+  text-align: center;
+  position: relative;
+  display: unset;
+}
+
+#nav-experiencias {
+  text-align: center;
+}
+
+.mobile {
+  display: unset;
+}
+
+.web {
+  display: none !important;
+}
+
+#nav-home .et {
+  background-image: url("../../../assets/images/em-black.png");
+  background-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0.6rem 0rem;
+  top: 1rem;
+}
+#nav-home.active .et {
+  background-image: url("../../../assets/images/em.png");
+}
+
 // TABLET
 @media screen and (min-width: 426px) {
   .emerson-torres {
@@ -155,6 +187,15 @@ nav ul {
   }
   nav {
     height: 4rem !important;
+  }
+  .icon-nav-mobile {
+    display: unset;
+  }
+  .mobile {
+    display: unset;
+  }
+  .web {
+    display: none !important;
   }
 }
 
@@ -270,6 +311,19 @@ nav ul {
     width: 100%;
     padding: 0.5rem;
     cursor: pointer;
+  }
+  .icon-nav-mobile {
+    display: none;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .web {
+    display: unset !important;
+    font-size: inherit !important;
+  }
+  .mobile {
+    display: none !important;
   }
 }
 

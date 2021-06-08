@@ -1,13 +1,17 @@
 <header>
 
     <ems-nav></ems-nav>
+    <button class="foto-cabecalho-mobile no-select" [ngClass]="[!desenho ? 'foto-real': '']"
+    [style.background-image]="desenho ? euDesenho : fotoReal"></button>
+
+    <button class="mudar-foto mobile-only" ontouchstart="" (click)="desenho = !desenho"></button>
     
     <h1 class="titulo-principal mobile">{{ dadosCompartilhados?.tra?.headerTituloSkillsMob }}</h1>
     <h1 class="titulo-principal web">{{ dadosCompartilhados?.tra?.headerTituloSkillsWeb }}</h1>
 
     <p class="texto web-font">{{ dadosCompartilhados?.tra?.headerTextoSkills }}</p>
 
-    <button [ngxScrollTo]="'#scroll-skills'" [ngxScrollToDuration]="300"><p>{{ dadosCompartilhados?.tra?.headerButtonSkills }}</p></button>
+    <button [ngxScrollTo]="'#scroll-skills'" class="web-tablet" [ngxScrollToDuration]="300"><p>{{ dadosCompartilhados?.tra?.headerButtonSkills }}</p></button>
     
     <div class="nuvem-base no-select">
         <div class="foto-cabecalho no-select"></div>

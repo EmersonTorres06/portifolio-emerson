@@ -5,7 +5,7 @@
 
 #scroll-experiencias {
   position: absolute;
-  top: 149.7rem;
+  top: 135.5rem;
 }
 
 .card-experiencia-ativa {
@@ -98,11 +98,11 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin: 48rem 0rem 0rem -15rem;
-    background-size: 13rem;
+    background-size: 17rem;
+    top: 196rem;
   }
   .nuvem-3 {
     margin: 25rem 0rem 0rem 40rem;
-    position: fixed;
     width: 10.4rem;
     position: absolute;
   }
@@ -115,6 +115,10 @@
   }
   .indra {
     margin-top: -0.4rem !important;
+  }
+  #scroll-experiencias {
+    position: absolute;
+    top: 168.5rem;
   }
 }
 
@@ -139,26 +143,43 @@
   }
   .nuvem-3 {
     position: absolute;
-    margin: 22rem 0rem 0rem 84.5rem;
+    right: 0;
+    margin: 0;
+    top: 191rem;
   }
   .nuvem-2 {
-    margin: 2rem 0rem 0rem 61rem;
+    right: 5rem;
+    top: 111rem;
     background-size: 10vw;
   }
   .titulo-principal {
     margin-top: 14rem;
   }
+  #scroll-experiencias {
+    top: 150rem;
+  }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1199px) and (max-width: 1399px) {
   .card-experiencia-ativa {
-    margin: 7rem 12rem 0 35vw;
+    width: 23rem;
+    height: 28rem;
+    margin: 7rem 12rem 0 35.6vw;
   }
   .card-experiencia-inativa {
-    margin: -25rem 12rem 0 35vw;
+    width: 21rem;
+    height: 24rem;
+    margin: -24rem 12rem 0 36vw;
   }
   .titulo-principal {
     margin-top: 14rem;
+  }
+  .cap {
+    left: -20rem;
+  }
+  .indra {
+    left: 22rem !important;
+    margin-top: -24rem !important;
   }
 }
 

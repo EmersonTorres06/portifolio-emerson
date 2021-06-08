@@ -8,10 +8,13 @@ export const ptBr = {
     /** 
      * NAV MENU
      */
+    inicio: 'Início',
     menuSkills: 'Skills',
-    menuExperiencias: 'Experiências',
+    menuExperiencias: 'Exp.',
     menuHobbies: 'Hobbies',
     menuContatos: 'Contatos',
+    emBreve: 'Em Breve :D',
+    linguagem: 'Linguagem',
     traIngUs: 'Inglês-US',
     traPtBr: 'Português-BR',
     /** */
