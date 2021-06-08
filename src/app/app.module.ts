@@ -13,6 +13,7 @@ import { ArteIlustracaoComponent } from './arte-ilustracao/arte-ilustracao.compo
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { ComponentsModule } from './components/components.module';
 import { DadosCompartilhados } from './shared/dados-compartilhados';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DadosCompartilhados } from './shared/dados-compartilhados';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ComponentsModule,
     TemplateModule,
@@ -30,7 +32,7 @@ import { DadosCompartilhados } from './shared/dados-compartilhados';
     MdbCollapseModule,
     ScrollToModule.forRoot()
   ],
-  providers: [DadosCompartilhados],
+  providers: [DadosCompartilhados, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

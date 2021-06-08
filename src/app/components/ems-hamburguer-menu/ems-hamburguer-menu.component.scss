@@ -1,0 +1,84 @@
+.hamburguer-button::after {
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  left: 0rem;
+  top: -0.5rem;
+  position: relative;
+  color: rgb(78 64 215 / 66%);
+}
+.hamburguer-button {
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  background: rgb(240 248 255 / 35%);
+  border-radius: 10rem;
+  padding: 0.1rem 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 1001;
+}
+.hamburguer-button.close::after {
+  content: "\f00d";
+  left: 0rem;
+  top: -0.3rem;
+  color: white;
+}
+.menu-body {
+  width: 0%;
+  transition: 0.2s;
+  height: 100%;
+  z-index: 1000;
+  background: rgb(9, 9, 131);
+  color: white;
+}
+.options {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  top: 8rem;
+  position: relative;
+}
+ul li h2 {
+  font-size: 3rem;
+  font-family: "Exo";
+  font-weight: 900;
+}
+.leng.active {
+  background: rgb(0 0 0 / 20%);
+}
+.leng {
+  height: 4rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.contatos {
+  background: white;
+  font-weight: 900;
+  font-family: "Exo";
+  color: #090983;
+  margin: 0rem -1rem;
+  position: absolute;
+  top: 70vh;
+}
+.mobile {
+  display: unset;
+}
+
+@media screen and (min-width: 426px) {
+  .hamburguer-button {
+    top: 0.5rem;
+    left: -7rem;
+  }
+  .contatos {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 824px) {
+  .mobile {
+    display: none;
+  }
+}

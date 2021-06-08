@@ -1,5 +1,5 @@
 .header-skill {
-  width: 24.9rem;
+  width: 24rem;
   height: 5rem;
   border-radius: 10px;
   box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
@@ -7,10 +7,10 @@
   background-image: linear-gradient(to bottom, #5143dc, #29209b);
 }
 
-.header-skill::after {
+#front-card > .header-skill::after {
   width: 23.9rem;
   height: 2rem;
-  opacity: 0.06;
+  opacity: 0.04;
   font-family: Raleway;
   padding: 1rem;
   font-size: 19px;
@@ -22,7 +22,7 @@
   text-align: justify;
   color: #ffffff;
   position: absolute;
-  top: -0.5rem;
+  top: -0.8rem;
   left: 0.9rem;
   content: "01001111 01101100 11100001 00100000 01100110 01101111 01110010 01100001 01110011 01110100 01100101 01101001 01110010 01101111 00100001 00100000 ";
 }
@@ -59,7 +59,7 @@
 }
 
 .corpo-skill {
-  width: 24.9rem;
+  width: 24rem;
   height: 184px;
   padding: 1rem 1rem;
   border-radius: 0 0 10px 10px;
@@ -102,7 +102,7 @@ li {
 }
 
 .skill-cards {
-  margin-top: -7rem;
+  margin-top: -13rem;
   z-index: 1;
   position: relative;
 }
@@ -126,6 +126,11 @@ li {
   }
   .skill-cards {
     margin-top: -3rem;
+  }
+  #front-card > .header-skill::after {
+    width: 29rem;
+    top: 0.3rem;
+    left: 10.7rem;
   }
 }
 
@@ -160,7 +165,7 @@ li {
     max-width: 77vw;
   }
   .skill-cards {
-    margin-top: 0rem;
+    margin-top: -1rem;
     position: relative;
   }
   .div-ver-tudo {
@@ -172,11 +177,28 @@ li {
   .card-center {
     margin: 0rem 18rem;
   }
-  .header-skill::after {
-  }
-  .header-skill::after {
+  #front-card > .header-skill::after {
     width: 31rem;
     top: -0.5rem;
+    left: 32rem;
+    content: "01001111 01101100 11100001 00100000 01100110 01101111 01110010 01100001 01110011 01110100 01100101 01101001 01110010 01101111 00100001 00100000 ";
+  }
+  #backend > .header-skill::after {
+    width: 31rem;
+    height: 2rem;
+    opacity: 0.06;
+    font-family: Raleway;
+    padding: 1rem;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #ffffff;
+    position: absolute;
+    top: 15.5rem;
     left: 32rem;
     opacity: 0.04;
     content: "01001111 01101100 11100001 00100000 01100110 01101111 01110010 01100001 01110011 01110100 01100101 01101001 01110010 01101111 00100001 00100000 ";

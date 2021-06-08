@@ -14,12 +14,14 @@ export class EmsNavComponent implements OnInit {
     window.onscroll = () => {
 
       let nav = document.getElementById('nav-ems') as HTMLElement;
+      let navHome = document.getElementById('nav-home') as HTMLElement;
       let navSkills = document.getElementById('nav-skills') as HTMLElement;
       let navExperiencias = document.getElementById('nav-experiencias') as HTMLElement;
 
       this.pagePosition >= 100 ? nav.classList.add('fixed') : nav.classList.remove('fixed');
-      this.pagePosition > 456 && this.pagePosition < 2268 ? navSkills.classList.add('active') : navSkills.classList.remove('active');
-      this.pagePosition > 2268 && this.pagePosition < 3168 ? navExperiencias.classList.add('active') : navExperiencias.classList.remove('active');
+      this.pagePosition < 456 ? navHome.classList.add('active') : navHome.classList.remove('active');
+      this.pagePosition > 456 && this.pagePosition < 2000 ? navSkills.classList.add('active') : navSkills.classList.remove('active');
+      this.pagePosition > 2000 && this.pagePosition < 3168 ? navExperiencias.classList.add('active') : navExperiencias.classList.remove('active');
 
     }
   }

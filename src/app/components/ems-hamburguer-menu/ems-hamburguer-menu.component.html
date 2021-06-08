@@ -1,0 +1,32 @@
+
+<button id="hamburguer-button" class="hamburguer-button position-fixed mobile" 
+    (click)="toggleEmsMenu()"></button>
+
+<ng-container *ngIf="!aberto; else menu"></ng-container>
+
+
+<div id="menu-body" class="menu-body position-fixed">
+    <ul id="options" class="options">
+        <li>
+            <h2>{{ dadosCompartilhados?.tra?.linguagem }}</h2>
+            <div class="row mt-3 mr-3">
+                <div class="col-6 leng" (click)="dadosCompartilhados.setTraducaoPtBR(); toggleEmsMenu()" 
+                    [ngClass]="[dadosCompartilhados?.leng == 'pt' ? 'active' : '']">
+                    <i class="br flag"></i> {{ dadosCompartilhados?.tra?.traPtBr }}
+                </div>
+                <div class="col-6 leng" (click)="dadosCompartilhados.setTraducaoEnUS(); toggleEmsMenu()" 
+                    [ngClass]="[dadosCompartilhados?.leng == 'en' ? 'active' : '']">
+                    <i class="us flag"></i> {{ dadosCompartilhados?.tra?.traIngUs }}
+                </div>
+            </div>
+        </li>
+        <li>
+            <button class="contatos" (click)="toggleEmsMenu()" [ngxScrollTo]="'#footer'" [ngxScrollToDuration]="300">
+                <i class="fas fa-mail-bulk mr-2"></i>{{ dadosCompartilhados?.tra?.menuContatos }}
+            </button>
+        </li>
+    </ul>
+</div>
+<ng-template #menu>
+
+</ng-template>
