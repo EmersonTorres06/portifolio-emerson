@@ -34,7 +34,7 @@ body {
 .ver-tudo {
   width: 16rem;
   height: 1rem;
-  margin: 0 0.5rem 0 0.5px;
+  margin: 0 1rem 0 0.5px;
   font-family: Raleway;
   font-size: 16px;
   font-weight: normal;
@@ -63,9 +63,9 @@ body {
 }
 
 button {
-  width: 24rem;
+  width: 23.5rem;
   height: 51px;
-  margin: 2rem 0.5rem 0 0.5rem;
+  margin: 2rem 1rem 0 1rem;
   padding: 16px 89px;
   border-radius: 10px;
   box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
@@ -76,9 +76,9 @@ button {
 }
 
 button:hover {
-  width: 24rem;
+  width: 23.5rem;
   height: 51px;
-  margin: 2rem 0.5rem 0 0.5rem;
+  margin: 2rem 1rem 0 1rem;
   padding: 16px 89px;
   border-radius: 10px;
   box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
@@ -87,9 +87,9 @@ button:hover {
 }
 
 button:active {
-  width: 24rem;
+  width: 23.5rem;
   height: 51px;
-  margin: 2rem 0.5rem 0 0.5rem;
+  margin: 2rem 1rem 0 1rem;
   padding: 16px 89px;
   border-radius: 10px;
   box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.06);
@@ -125,7 +125,7 @@ a.config {
 
 .titulo-principal {
   width: 24rem;
-  margin: 0rem 0.5rem 1rem 0.5rem;
+  margin: 0rem 1rem 1rem 1rem;
   font-family: Exo;
   font-size: 40px;
   font-weight: 900;
@@ -140,7 +140,7 @@ a.config {
 .texto {
   width: 24rem;
   height: 84px;
-  margin: 0 0.5rem 1.8rem 0.5rem;
+  margin: 0 1rem 1.8rem 1rem;
   font-family: Raleway;
   font-size: 20px;
   font-weight: normal;
@@ -185,7 +185,7 @@ a.config {
 .icon {
   width: 4.4rem;
   height: 4.4rem;
-  padding: 0.5rem 1.4rem 1.4rem 0.5em;
+  padding: 0.4rem 1.4rem 1.4rem 0.5em;
   border: solid 6px #ffffff;
   background-color: #3429a5;
   position: absolute;
@@ -199,13 +199,13 @@ a.config {
 @media screen and (min-width: 426px) {
   .titulo-principal {
     width: 48rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 1rem 1rem 1rem;
     text-align: center;
   }
   .texto {
     width: 48rem;
     height: 84px;
-    margin: 0 0.5rem 1.8rem 0.5rem;
+    margin: 0 1rem 1.8rem 1rem;
     text-align: center;
     text-align: justify;
     padding: 0 6rem 0 6rem;

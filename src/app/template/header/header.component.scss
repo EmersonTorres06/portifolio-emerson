@@ -8,6 +8,12 @@ header {
   background-position: -16rem 0rem;
 }
 
+.texto,
+.titulo-principal {
+  position: relative;
+  z-index: 3;
+}
+
 #scroll-skills {
   position: absolute;
   top: 39.5rem;
@@ -59,7 +65,7 @@ nav {
   width: 18rem;
   height: 19rem;
   position: relative;
-  left: 4rem;
+  left: 3rem;
   right: 4rem;
   top: 0rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -93,6 +99,17 @@ nav {
   background-color: rgb(237, 237, 238);
   box-shadow: none;
   transform: translateY(4px);
+}
+.base-mobile {
+  display: unset;
+  width: 25.9rem;
+  height: 26rem;
+  background: #eeeeee;
+  position: absolute;
+  margin-top: -20rem;
+  left: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 // TABLET
@@ -135,6 +152,9 @@ nav {
     display: unset;
   }
   .mobile-only {
+    display: none;
+  }
+  .base-mobile {
     display: none;
   }
 }
@@ -190,6 +210,9 @@ nav {
     display: unset;
   }
   .mobile-only {
+    display: none;
+  }
+  .base-mobile {
     display: none;
   }
 }
