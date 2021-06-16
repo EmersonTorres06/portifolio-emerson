@@ -46,7 +46,7 @@ export class EmsModalComponent implements OnInit, AfterViewInit {
   }
 
   private abrirModalMobile() {
-    document.getElementById('modal-mobile').style.height = '70%';
+    document.getElementById('modal-mobile').style.height = '55%';
   }
 
   private fecharModalMobile() {
