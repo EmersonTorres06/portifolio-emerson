@@ -1,12 +1,13 @@
 <header>
 
     <ems-nav></ems-nav>
-    <button class="foto-cabecalho-mobile no-select" [ngClass]="[!desenho ? 'foto-real': '']"
-    [style.background-image]="desenho ? euDesenho : fotoReal"></button>
 
-    <button class="mudar-foto mobile-only" ontouchstart="" (click)="desenho = !desenho"></button>
+    <div class="mobile-only margin-mobile">
+        <p class="emerson-torres"></p>
+    </div>
     
-    <h1 class="titulo-principal mobile">{{ dadosCompartilhados?.tra?.headerTituloSkillsMob }}</h1>
+    <h1 class="titulo-principal mobile-only">{{ dadosCompartilhados?.tra?.headerTituloSkillsMob }}</h1>
+    <h1 class="titulo-principal tablet">{{ dadosCompartilhados?.tra?.headerTituloSkillsTab }}</h1>
     <h1 class="titulo-principal web">{{ dadosCompartilhados?.tra?.headerTituloSkillsWeb }}</h1>
 
     <p class="texto web-font">{{ dadosCompartilhados?.tra?.headerTextoSkills }}</p>
@@ -16,8 +17,6 @@
     <div class="nuvem-base no-select">
         <div class="foto-cabecalho no-select"></div>
     </div>
-
-    <div class="base-mobile"></div>
 
 </header>
 

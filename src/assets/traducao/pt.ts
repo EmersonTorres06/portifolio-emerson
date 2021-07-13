@@ -22,8 +22,9 @@ export const ptBr = {
     /**
      * MINHAS SKILLS
      */
-    headerTituloSkillsMob: 'Bem-vindo ao meu portifólio!!',
-    headerTituloSkillsWeb: 'Bem-vindo ao portifólio de um apaixonado por programação e Ilustração!',
+    headerTituloSkillsMob: 'Seja bem-vindo(a)!!',
+    headerTituloSkillsTab: 'Bem-vindo(a) ao meu portifólio!!',
+    headerTituloSkillsWeb: 'Bem-vindo(a) ao portifólio de um apaixonado por programação e Ilustração!',
     headerTextoSkills: 'Me chamo Emerson Torres Feitosa, tenho 25 anos e gostaria de te receber nesse novo projeto para te mostrar um pouco dos meus conhecimentos e minhas habilidades, vamos lá?',
     headerButtonSkills: 'Começar a Jornada!',
     cardBodyTitulo: 'São tantas coisas!',
@@ -71,7 +72,7 @@ export const ptBr = {
     /**
      * CONTATOS
      */
-    headerContatos: 'Obrigado por visitar meu Portifólio!',
+    headerContatos: 'Obrigado pela visita! 💙',
     textContatos: 'Continuarei Trabalhando por aqui para trazer futuras melhorias para '
     + 'esse currículo online! Gostou da experiência?',
     footerTextContatos: 'Entre em contato!'

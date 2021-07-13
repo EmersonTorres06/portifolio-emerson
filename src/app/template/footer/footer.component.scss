@@ -73,6 +73,83 @@ div.contatos-mobile {
   height: 5rem;
 }
 
+@media screen and (max-device-width: 360px) and (device-aspect-ratio: 9/16) {
+  .titulo-secundario,
+  .texto {
+    width: 21rem !important;
+  }
+  .nuvem_footer {
+    width: 31.5rem;
+  }
+  .eu_footer {
+    background-size: 21rem;
+    width: 21rem;
+    margin: 10rem 0rem 0 0rem;
+    transform: unset;
+  }
+  div.contatos-mobile {
+    top: 255rem;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-width: 400px) {
+  .titulo-secundario,
+  .texto {
+    width: 21rem !important;
+  }
+  .nuvem_footer {
+    width: 31.5rem;
+  }
+  .eu_footer {
+    background-size: 21rem;
+    width: 21rem;
+    margin: 10rem 0rem 0 0rem;
+    transform: unset;
+  }
+  div.contatos-mobile {
+    top: 255rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  .titulo-secundario,
+  .texto {
+    width: 18rem !important;
+  }
+  .nuvem_footer {
+    width: 29rem;
+  }
+  .eu_footer {
+    background-size: 18rem;
+    width: 18rem;
+    margin: 10rem 0rem 0 0rem;
+    transform: unset;
+  }
+  div.contatos-mobile {
+    top: 251rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  .titulo-secundario,
+  .texto {
+    width: 21.5 !important;
+  }
+  .nuvem_footer {
+    width: 32.5rem;
+  }
+  .eu_footer {
+    background-size: 21.5;
+    width: 21.5;
+    margin: 10rem 0rem 0 0rem;
+    transform: unset;
+  }
+  div.contatos-mobile {
+    top: 251rem;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .nuvem_footer {
     background-size: 138rem 102rem;

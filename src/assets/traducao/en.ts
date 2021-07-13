@@ -22,7 +22,8 @@
     /**
      * MINHAS SKILLS
      */
-    headerTituloSkillsMob: 'Welcome to my portfolio!!',
+    headerTituloSkillsMob: 'Hey! Welcome!',
+    headerTituloSkillsTab: 'Welcome to my portfolio!!',
     headerTituloSkillsWeb: 'Welcome to the portfolio of a passionate programming and illustration!',
     headerTextoSkills: "My name is Emerson Torres Feitosa, I'm 25 years old and I'd like to welcome "
     + "you to this new project to show some of my knowledge and my skills, Let's do it?",

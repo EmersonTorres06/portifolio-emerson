@@ -17,6 +17,28 @@
 
 @import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
 
+.emerson-torres {
+  font-family: Exo;
+  font-size: 16pt;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6065f1;
+  cursor: pointer;
+  display: none !important;
+}
+
+.emerson-torres::before {
+  content: "Emerson";
+}
+
+.emerson-torres:hover {
+  color: #575cdd;
+}
+
 body {
   background-color: #f0f0f0 !important;
 }
@@ -53,8 +75,15 @@ body {
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem 0.8rem 0rem rgb(169 169 169 / 53%);
 }
-.ver-tudo::after {
-  content: ">";
+.ver-tudo.xp::after {
+  content: "\f0b1";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 1rem;
+  font-weight: bolder;
+}
+.ver-tudo.sk::after {
+  content: "\f121";
+  font-family: "Font Awesome 5 Free";
   padding-left: 1rem;
   font-weight: bolder;
 }
@@ -194,6 +223,120 @@ a.config {
   font-size: 22pt;
   color: #ffffff;
   box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (max-device-width: 360px) and (device-aspect-ratio: 9/16) {
+  .titulo-principal {
+    width: 22.5rem;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+  .texto {
+    width: 20.5rem;
+    font-size: 1.1rem;
+  }
+  button {
+    width: 20.5rem;
+    padding: 16px 30px;
+  }
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.2rem 1.4rem 0.2rem 0.4em;
+  }
+  .titulo-secundario {
+    font-size: 1.2rem;
+  }
+  .texto-secundario {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  .titulo-principal {
+    width: 20rem;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+  .texto {
+    width: 18rem;
+    font-size: 1rem;
+  }
+  button {
+    width: 18rem;
+    padding: 16px 30px;
+  }
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.2rem 1.4rem 0.2rem 0.4em;
+  }
+  .titulo-secundario {
+    font-size: 1.2rem;
+  }
+  .texto-secundario {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-width: 400px) {
+  .titulo-principal {
+    width: 22.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+  .texto {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+  button {
+    width: 20rem;
+    padding: 16px 30px;
+  }
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.2rem 1.4rem 0.2rem 0.4em;
+  }
+  .titulo-secundario {
+    font-size: 1.2rem;
+  }
+  .texto-secundario {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  .titulo-principal {
+    width: 21.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0rem 0rem 1rem 1rem;
+  }
+  .texto {
+    width: 21.5rem;
+    font-size: 1rem;
+  }
+  button {
+    width: 21.5rem;
+    padding: 16px 30px;
+  }
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.2rem 1.4rem 0.2rem 0.4em;
+  }
+  .titulo-secundario {
+    width: 21.5rem;
+    font-size: 1.2rem;
+  }
+  .texto-secundario {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 426px) {

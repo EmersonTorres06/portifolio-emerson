@@ -68,6 +68,21 @@ ul li h2 {
   display: unset;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  .hamburguer-button {
+    border: none;
+    left: 0rem;
+    font-size: 1rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .hamburguer-button::after {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .hamburguer-button {
     top: 0.5rem;

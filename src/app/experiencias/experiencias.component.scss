@@ -64,6 +64,107 @@
   z-index: -2;
 }
 
+@media screen and (max-device-width: 360px) and (device-aspect-ratio: 9/16) {
+  .card-experiencia-ativa {
+    width: 21rem;
+  }
+  .header-spread {
+    background-size: 6rem;
+    margin: -8rem 0 0 2rem;
+  }
+  .card-experiencia-ativa .titulo-secundario {
+    width: 12.3rem;
+    text-align: center !important;
+    margin: -2rem 0rem 0rem -1rem !important;
+  }
+  .card-experiencia-inativa {
+    width: 21rem;
+  }
+  #front-card > .header-skill::after {
+    width: 18rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 18rem !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  .card-experiencia-ativa {
+    width: 18.5rem;
+  }
+  .header-spread {
+    background-size: 6rem;
+    margin: -8rem 0 0 2rem;
+  }
+  .card-experiencia-ativa .titulo-secundario {
+    width: 12.3rem;
+    text-align: center !important;
+    margin: -2rem 0rem 0rem -1rem !important;
+  }
+  .card-experiencia-inativa {
+    width: 18.5rem;
+  }
+  #front-card > .header-skill::after {
+    width: 18rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 18rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-width: 400px) {
+  .card-experiencia-ativa {
+    width: 21rem;
+  }
+  .header-spread {
+    background-size: 6rem;
+    margin: -8rem 0 0 2rem;
+  }
+  .card-experiencia-ativa .titulo-secundario {
+    width: 14.9rem;
+    text-align: center !important;
+    margin: -2rem 0rem 0rem -1rem !important;
+  }
+  .card-experiencia-inativa {
+    width: 21rem;
+  }
+  #front-card > .header-skill::after {
+    width: 18rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 18rem !important;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  .card-experiencia-ativa {
+    width: 22rem;
+  }
+  .header-spread {
+    background-size: 6rem;
+    margin: -8rem 0 0 2rem;
+  }
+  .card-experiencia-ativa .titulo-secundario {
+    width: 12.3rem;
+    text-align: center !important;
+    margin: -2rem 0rem 0rem -1rem !important;
+  }
+  .card-experiencia-inativa {
+    width: 22rem;
+  }
+  #front-card > .header-skill::after {
+    width: 18rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 18rem !important;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .titulo-principal {
     margin-top: 20rem;
