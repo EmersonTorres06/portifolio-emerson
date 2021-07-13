@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor(public dadosCompartilhados: DadosCompartilhados, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    this.euDesenho = this.sanitizer.bypassSecurityTrustStyle("url('../../../assets/images/arte_o_poder.png')");
+    this.euDesenho = this.sanitizer.bypassSecurityTrustStyle("url('../../../assets/images/arte_o_poder_eu.png')");
     this.fotoReal = this.sanitizer.bypassSecurityTrustStyle("url('../../../assets/images/foto-real.jpg')");
   }
 

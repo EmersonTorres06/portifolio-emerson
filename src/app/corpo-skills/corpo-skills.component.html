@@ -8,8 +8,8 @@
     </div>
 </div>
 
-<div class="w-100 text-center div-ver-tudo">
-    <p class="ver-tudo" (click)="emsModal.toggleModal()">{{ dadosCompartilhados?.tra?.verTudoSkills }}</p>
+<div class="text-center div-ver-tudo">
+    <p class="ver-tudo sk" (click)="emsModal.toggleModal()">{{ dadosCompartilhados?.tra?.verTudoSkills }}</p>
 </div>
 
 <ems-modal #emsModal>
@@ -17,8 +17,8 @@
         <ng-container *ngTemplateOutlet="intContinua"></ng-container>
     </ng-container>
     <ng-container mobile>
-        <div class="mb-3"><ng-container *ngTemplateOutlet="backEnd"></ng-container></div>
-        <div class="mb-3"><ng-container *ngTemplateOutlet="intContinua"></ng-container></div>
+        <div class="mb-3 ml-1"><ng-container *ngTemplateOutlet="backEnd"></ng-container></div>
+        <div class="mb-3 ml-1"><ng-container *ngTemplateOutlet="intContinua"></ng-container></div>
     </ng-container>
 </ems-modal>
 

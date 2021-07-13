@@ -1,11 +1,25 @@
 header {
+  background-image: url("../../../assets/images/header-mobile-phone.jpg");
   width: 25.9rem;
   height: 54rem;
   padding: 16px 0 37px;
-  background-image: url("../../../assets/images/header-mobile.png");
   background-repeat: no-repeat;
-  background-size: 49rem 97rem;
-  background-position: -16rem 0rem;
+  background-size: 26rem;
+  background-position: 0rem -5.5rem;
+}
+
+.margin-mobile {
+  margin-bottom: 2.5rem;
+}
+
+.emerson-torres {
+  display: block !important;
+  text-align: center;
+  margin-top: 1.8rem !important;
+}
+
+.emerson-torres::before {
+  content: "Emerson Torres";
 }
 
 .texto,
@@ -31,6 +45,10 @@ nav {
   display: inherit;
 }
 
+.tablet {
+  display: none;
+}
+
 .web {
   display: none;
 }
@@ -40,7 +58,7 @@ nav {
 }
 
 .nuvem-base {
-  background-image: url("../../../assets/images/nuvem_base.png");
+  background-image: url("../../../assets/images/base-mobile.png");
   width: 41.9rem;
   height: 40rem;
   margin: 17rem 0 0 -12rem;
@@ -48,9 +66,9 @@ nav {
   top: 0.9rem;
   left: -4rem;
   position: absolute;
-  background-size: 131rem 79rem;
+  background-size: 43rem;
   z-index: 1 !important;
-  background-position: -40rem -2rem;
+  background-position: 5rem 14.1rem;
 }
 
 .foto-cabecalho {
@@ -71,45 +89,121 @@ nav {
   background-color: rgba(0, 0, 0, 0.03);
   margin-bottom: 1.8rem;
 }
-.foto-real {
-  background-size: 20rem;
-  background-position: -1rem 0rem;
+
+@media screen and (max-device-width: 360px) and (device-aspect-ratio: 9/16) {
+  header {
+    max-width: 22.5rem !important;
+    overflow: hidden;
+  }
+  .base-mobile {
+    background-position: 4rem 14.1rem;
+  }
+  header {
+    background-size: 22.5rem;
+    background-position: 0rem -3rem;
+  }
+  .nuvem-base {
+    width: 22.5rem;
+    margin: 0rem 0 0 0rem;
+    top: 0.9rem;
+    left: 0rem;
+    position: absolute;
+    background-size: 33.5rem;
+    background-position: -6.9rem 29rem;
+  }
 }
 
-.mudar-foto {
-  position: absolute;
-  left: 18rem;
-  top: 18rem;
-  width: 0rem;
-  margin: 0;
-  padding: 1.7rem;
-  border-radius: 3rem;
-  background: ghostwhite;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  header {
+    max-width: 20rem !important;
+    overflow: hidden;
+  }
+  .base-mobile {
+    background-position: 4rem 14.1rem;
+  }
+  header {
+    background-size: 20rem;
+    background-position: 0rem -3rem;
+  }
+  .nuvem-base {
+    width: 20rem;
+    margin: 0rem 0 0 0rem;
+    top: 0.9rem;
+    left: 0rem;
+    position: absolute;
+    background-size: 30rem;
+    background-position: -6.3rem 25rem;
+  }
 }
-.mudar-foto::after {
-  content: "\21c6";
-  font-size: 1.8rem;
-  left: 0.9rem;
-  top: 0.3rem;
-  position: absolute;
-  color: #4e40d7;
-  font-weight: 900;
+
+@media only screen and (min-device-width: 360px) and (max-width: 400px) {
+  header {
+    max-width: 22.5rem !important;
+    overflow: hidden;
+  }
+  .base-mobile {
+    background-position: 4rem 14.1rem;
+  }
+  header {
+    background-size: 22.5rem;
+    background-position: 0rem -3rem;
+  }
+  .nuvem-base {
+    width: 22.5rem;
+    margin: 0rem 0 0 0rem;
+    top: 0.9rem;
+    left: 0rem;
+    position: absolute;
+    background-size: 31.5rem;
+    background-position: -6.5rem 29.5rem;
+  }
 }
-.mudar-foto:active {
-  background-color: rgb(237, 237, 238);
-  box-shadow: none;
-  transform: translateY(4px);
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  header {
+    max-width: 23.5rem !important;
+    overflow: hidden;
+  }
+  .base-mobile {
+    background-position: 4rem 14.1rem;
+  }
+  header {
+    background-size: 23.5rem;
+    background-position: 0rem -3rem;
+  }
+  .nuvem-base {
+    width: 23.5rem;
+    margin: 0rem 0 0 0rem;
+    top: 0.9rem;
+    left: 0rem;
+    position: absolute;
+    background-size: 33.5rem;
+    background-position: -6.9rem 29rem;
+  }
 }
-.base-mobile {
-  display: unset;
-  width: 25.9rem;
-  height: 26rem;
-  background: #eeeeee;
-  position: absolute;
-  margin-top: -20rem;
-  left: 0;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+
+@media only screen and (min-device-width: 392) and (min-device-pixel-ratio: 3) {
+  header {
+    max-width: 20rem !important;
+    overflow: hidden;
+  }
+  .base-mobile {
+    background-position: 4rem 14.1rem;
+  }
+  header {
+    background-size: 20rem;
+    background-position: 0rem -3rem;
+  }
+  .nuvem-base {
+    width: 20rem;
+    margin: 0rem 0 0 0rem;
+    top: 0.9rem;
+    left: 0rem;
+    position: absolute;
+    background-size: 30rem;
+    background-position: -6.3rem 25rem;
+  }
 }
 
 // TABLET
@@ -120,9 +214,11 @@ nav {
     padding: 16px 0 37px;
     background-size: 70rem;
     background-position: -10rem -1rem;
+    background-image: url("../../../assets/images/header-mobile.png");
   }
   .nuvem-base {
     width: 62rem;
+    background-image: url("../../../assets/images/nuvem_base.png");
     height: 36rem;
     top: 5rem;
     left: 0;
@@ -156,6 +252,9 @@ nav {
   }
   .base-mobile {
     display: none;
+  }
+  .tablet {
+    display: block;
   }
 }
 
@@ -208,6 +307,9 @@ nav {
   }
   .web-tablet {
     display: unset;
+  }
+  .tablet {
+    display: none;
   }
   .mobile-only {
     display: none;

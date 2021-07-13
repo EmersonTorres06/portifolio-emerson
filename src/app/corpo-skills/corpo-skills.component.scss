@@ -102,9 +102,102 @@ li {
 }
 
 .skill-cards {
-  margin-top: -13rem;
+  margin-top: -12rem;
   z-index: 1;
   position: relative;
+}
+
+@media screen and (max-device-width: 360px) and (device-aspect-ratio: 9/16) {
+  .header-skill,
+  .corpo-skill {
+    width: 19.9rem;
+    margin: 0rem 1.3rem;
+  }
+  .corpo-skill ul {
+    font-size: 0.8rem;
+  }
+  .skill-cards {
+    margin-top: -15rem;
+    max-width: 19rem !important;
+  }
+  #front-card > .header-skill::after {
+    width: 19rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 19rem !important;
+    margin-left: 0.8rem !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (device-aspect-ratio: 40/71),
+  screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  .header-skill,
+  .corpo-skill {
+    width: 18rem;
+  }
+  .corpo-skill ul {
+    font-size: 0.6rem;
+  }
+  .skill-cards {
+    margin-top: -21rem;
+    max-width: 20rem !important;
+  }
+  #front-card > .header-skill::after {
+    width: 18rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 18rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-width: 400px) {
+  .header-skill,
+  .corpo-skill {
+    width: 20rem;
+    margin: 0rem 1.1rem;
+  }
+  .corpo-skill ul {
+    font-size: 0.9rem;
+  }
+  .skill-cards {
+    margin-top: -16rem;
+    max-width: 20rem !important;
+  }
+  #front-card > .header-skill::after {
+    width: 20rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 20rem !important;
+    margin: 1rem 0.6rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  .header-skill,
+  .corpo-skill {
+    width: 21.5rem;
+    margin-left: 0.8rem !important;
+  }
+  .corpo-skill ul {
+    font-size: 0.8rem;
+  }
+  .skill-cards {
+    margin-top: -16rem;
+    max-width: 20rem !important;
+  }
+  #front-card > .header-skill::after {
+    width: 21.5 !important;
+    position: relative;
+    top: -4rem !important;
+    left: 0rem;
+  }
+  .div-ver-tudo,
+  .ver-tudo {
+    width: 21.5 !important;
+  }
 }
 
 // TABLET
